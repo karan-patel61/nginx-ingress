@@ -46,5 +46,13 @@ NAME                                                 DESIRED   CURRENT   READY  
 replicaset.apps/ingress-nginx-controller-f86fd6d96   1         1         1       6m15s \
 NAME                                       STATUS     COMPLETIONS   DURATION   AGE \
 job.batch/ingress-nginx-admission-create   Complete   1/1           10s        6m15s \
-job.batch/ingress-nginx-admission-patch    Complete   1/1           11s        6m15s \
+job.batch/ingress-nginx-admission-patch    Complete   1/1           11s        6m15s
+
+## Create the nginx pods and services
+```bash
+kubectl apply -f nginx-pod-1.yaml
+kubectl apply -f nginx-pod-2.yaml
+kubectl apply -f web-service.yaml
+kubectl apply -f api-service.yaml
+```
 
