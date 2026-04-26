@@ -1,6 +1,14 @@
 # nginx-ingress
 We will implement the Kubernetes Ingress concept using nginx-ingress on [KillerKoda](https://killercoda.com/playgrounds/scenario/kubernetes).
 
+## Clone the nginx-ingress repo
+
+```bash
+git clone https://github.com/karan-patel61/nginx-ingress.git
+
+cd nginx-ingress
+```
+
 ## Install Nginx Ingress Controller (Short-Version)
 First, we need to install the nginx ingress controller using the following command.
 ```bash
