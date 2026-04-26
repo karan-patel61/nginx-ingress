@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-service
+  labels:
+    app: web-service
+spec:
+  containers:
+  - image: nginx
+    name: web-service
