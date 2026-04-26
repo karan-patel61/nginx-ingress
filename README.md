@@ -26,7 +26,7 @@ deployment.apps/ingress-nginx-controller created \
 job.batch/ingress-nginx-admission-create created \
 job.batch/ingress-nginx-admission-patch created \
 ingressclass.networking.k8s.io/nginx created \
-validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created \
+validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created
 
 ## Validate Nginx Ingress Controller is installed successfully
 ```bash
