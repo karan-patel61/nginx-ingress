@@ -32,6 +32,7 @@ validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admiss
 ```bash
 kubectl get all -n ingress-controller
 ```
+Expected Output:
 > root@controlplane:~$ kubectl get all -n ingress-nginx  \
 NAME                                           READY   STATUS      RESTARTS   AGE \
 pod/ingress-nginx-admission-create-tlxkn       0/1     Completed   0          6m15s \
@@ -64,7 +65,7 @@ kubectl apply -f ingress.yaml
 kubectl describe ingress main-ingress
 ```
 
-Expected Output
+Expected Output:
 
 >root@controlplane:~/nginx-ingress$ k describe ing main-ingress \
 Name:             main-ingress \
@@ -84,3 +85,13 @@ Events:  \
   Type    Reason  Age   From                      Message  \
   ----    ------  ----  ----                      -------  \
   Normal  Sync    12s   nginx-ingress-controller  Scheduled for sync
+
+## Validate web-service and api-service are accesible
+Check the NodePort for the ingress controller
+
+```bash
+kubectl get svc -n ingress-gateway
+```
+Navigate to KillerKoda Traffic/Ports page and input the NodePort of the ingress controller.
+Once the page is loaded in a new tab validate that the main page is displaying the Nginx Home Page.
+Edit the URL and add '/api' at the end. The page display should be for the Nginx Hello Page.
