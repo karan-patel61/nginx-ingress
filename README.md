@@ -13,6 +13,7 @@ kubectl get all -n ingress-controller
 ```
 
 Expected Output:
+> root@controlplane:~$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
 > namespace/ingress-nginx created
 serviceaccount/ingress-nginx created
 serviceaccount/ingress-nginx-admission created
