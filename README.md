@@ -102,6 +102,6 @@ kubectl get svc -n ingress-nginx
 ```
 Navigate to KillerKoda Traffic/Ports page and input the NodePort of the ingress controller.
 
-Once the page is loaded in a new tab validate that the main page is displaying the Nginx Home Page.
+Once the page is loaded in a new tab validate that the main page is displaying the Welcome to Nginx Home Page.
 
 Edit the URL and add '/api' at the end. The page display should be for the Nginx Hello Page.
