@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-hello
+  labels:
+    app: nginx-hello
+spec:
+  containers:
+  - image: nginxdemos/hello
+    name: nginx-hello
