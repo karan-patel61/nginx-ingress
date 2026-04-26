@@ -98,7 +98,7 @@ Events:  \
 Check the NodePort for the ingress controller
 
 ```bash
-kubectl get svc -n ingress-gateway
+kubectl get svc -n ingress-nginx
 ```
 Navigate to KillerKoda Traffic/Ports page and input the NodePort of the ingress controller.
 
