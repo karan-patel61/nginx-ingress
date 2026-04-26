@@ -65,7 +65,8 @@ kubectl describe ingress main-ingress
 ```
 
 Expected Output
-> root@controlplane:~/nginx-ingress$ k describe ing main-ingress \
+
+`root@controlplane:~/nginx-ingress$ k describe ing main-ingress \
 Name:             main-ingress \
 Labels:           <none> \
 Namespace:        default \
@@ -75,11 +76,11 @@ Default backend:  <default> \
 Rules: \
   Host        Path  Backends \
   ----        ----  -------- \
-  > `*`  \
+  *  \
               /      web-service:80 (192.168.1.30:80) \
               /api   api-service:80 (192.168.1.175:80) \
 Annotations:  nginx.ingress.kubernetes.io/rewrite-target: /  \
 Events:  \
   Type    Reason  Age   From                      Message  \
   ----    ------  ----  ----                      -------  \
-  Normal  Sync    12s   nginx-ingress-controller  Scheduled for sync  \
+  Normal  Sync    12s   nginx-ingress-controller  Scheduled for sync`
