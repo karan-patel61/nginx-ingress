@@ -75,7 +75,7 @@ Default backend:  <default> \
 Rules: \
   Host        Path  Backends \
   ----        ----  -------- \
-  *  \
+  > *  \
               /      web-service:80 (192.168.1.30:80) \
               /api   api-service:80 (192.168.1.175:80) \
 Annotations:  nginx.ingress.kubernetes.io/rewrite-target: /  \
